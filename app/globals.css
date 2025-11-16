@@ -119,4 +119,16 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  a {
+    @apply !text-blue-600 underline ;
+  }
+  
+  .dark a {
+    @apply !text-blue-400 underline;
+  }
+  
+  .single-char-link {
+    @apply bg-accent text-accent-foreground px-2 py-1 rounded-full hover:underline hover:scale-105 transition-all duration-100 !text-foreground !no-underline;
+  }
 }

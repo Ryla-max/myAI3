@@ -8,7 +8,6 @@ export const readSyllabus = tool({
         hypothetical_document: z.string().describe('An example of what the desired text would look like'),
     }),
     execute: async ({ hypothetical_document }) => {
-        console.log("HYPO!!!", hypothetical_document);
         return await readDocument('syllabus', hypothetical_document);
     },
 });
